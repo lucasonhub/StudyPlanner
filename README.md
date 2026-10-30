@@ -49,3 +49,9 @@ O progresso usa `localStorage`: permanece neste navegador e nesta origem, sem si
 ## Verificações
 
 Verificado no Chromium em larguras de 1440, 390 e 320 pixels: navegação entre dias e etapas, carga horária, cobertura dos 127 itens do conteúdo, marcação e persistência após recarga, edição, filtro, personalização, exportação e restauração do backup e versão de impressão. Sem erros JavaScript nos fluxos testados.
+
+## Se o endereço ainda não abrir
+
+Em Settings → Pages, confirme **Deploy from a branch**, **main** e **/ (root)**, depois salve. Este repositório entrega o HTML diretamente, sem um workflow próprio do GitHub Actions. Se a origem estiver em **GitHub Actions**, altere-a para a publicação pela branch.
+
+Acompanhe a publicação na aba [Actions](https://github.com/lucasonhub/StudyPlanner/actions): o GitHub deve criar a execução **pages build and deployment**. Aguarde a conclusão com sucesso e abra o link mostrado em Settings → Pages. Se a execução falhar, abra os detalhes do erro antes de alterar os arquivos. O endereço diferencia maiúsculas e minúsculas: use `/StudyPlanner/`.
